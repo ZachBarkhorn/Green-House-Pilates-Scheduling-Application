@@ -1,11 +1,6 @@
 IOS/Android client app and part of GHP website. admin page part of GHP website
 
 client--------
-
-
-
-
-
 logo at the top of the studio
 
 profile button in top right corner
@@ -47,8 +42,6 @@ summary tab in personal view detailing immediate easy to find things, upcoming s
 
 reservations tab in personal view
 
-
-dashboard with upcoming reservations (if none have book now button)
 ## Client
 - **US-C01**: As a client, I want to view my upcoming reservations, so that I can be reminded of the days I will be traveling to the studio.
 - **US-C02**: As a client, I want to see how many classes away from my next reward I am, so that I am motivated to keep attending classes and get my reward.

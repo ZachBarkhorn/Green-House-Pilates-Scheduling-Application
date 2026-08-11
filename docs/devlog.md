@@ -1,2 +1,2 @@
 ## 8/11/26
-Created repository, setup documentation structure to record architecture decisions and keep a log of progress.
+Created repository, setup documentation structure to record architecture decisions and keep a log of progress. Researched how I'll go through the ssdlc phases for practice. Created the requirements phase folder and begun documentation for actors and user stories. Recorded claude output for the build phase into the build-phase file. Got through the first couple user story conversions of the loose requirement ideas I got from the requirements inteview with the client.

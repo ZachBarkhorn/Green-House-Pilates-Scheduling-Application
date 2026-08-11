@@ -2,9 +2,9 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
 
 client--------
 
-Looks clean on client side
 
-dashboard with upcoming reservations (if none have book now button)
+
+
 
 logo at the top of the studio
 
@@ -46,3 +46,14 @@ individual view for each account on the app showing their upcoming classes, purc
 summary tab in personal view detailing immediate easy to find things, upcoming sched, subscriptions,
 
 reservations tab in personal view
+
+
+dashboard with upcoming reservations (if none have book now button)
+## Client
+- **US-C01**: As a client, I want to view my upcoming reservations, so that I can be reminded of the days I will be traveling to the studio.
+- **US-C02**: As a client, I want to see how many classes away from my next reward I am, so that I am motivated to keep attending classes and get my reward.
+- **EPIC-C-Dashboard**: As a client, I want a dashboard that shows the most important information I need a glance, so that I don't have to spend time navigating different menus to find what I need. **Dependency** = C01,C02, (more if I decide on another dashboard display).
+- **US-C03**
+
+## Non-Functional Reqs
+As a client, I want to have a user interface that looks clean and is easy to use, so that I don't have to exert much mental energy to book a class and there is little friction from having the idea of going to a class and actually booking it.

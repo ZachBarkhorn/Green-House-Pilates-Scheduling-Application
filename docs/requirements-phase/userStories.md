@@ -60,7 +60,7 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
  
 ### Epics
  
-- **EPIC-C-Booking**: As a client, I want a complete, safe booking flow, so that I can reserve, manage, and get the most out of my class attendance. **Dependency** = C09, C10, C16, C17, C18, C19, C27
+- **EPIC-C-Booking**: As a client, I want a complete, safe booking flow, so that I can reserve, manage, and get the most out of my class attendance. **Dependency** = C09, C10, C16, C17, C18, C27
 
 - **EPIC-C-AccountPage**: As a client, I want an account page with all my data and information, so that I can edit my preferences and change data in one place. **Dependency** = C04, C19, C20, C21, C23, C24, C25, C26
 
@@ -152,8 +152,8 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
 
 # Design Constraints
 - **DC-01**: Studio logo must appear in the header on every client-facing screen, for brand consistency.
-- **DC-02**: Profile button will be in the top right of the screen in the header.
-- **DC-03**: Achievements features where client gets rewards displayed in a circular graphic and it fills as you get closer.
+- **DC-02**: Profile button will be in the top right of the screen in the header. (US-C03)
+- **DC-03**: Achievements features where client gets rewards displayed in a circular graphic and it fills as you get closer. (US-C02)
 - **DC-04**: Checkbox on the schedule screen to show the full classes (US-C08) will be right next to schedule list
 - **DC-05**: Client roster view for staff must exclude spend, membership package cost, and full contact details — matches actors.md restriction.
 - **DC-06**: Admin UI must not expose raw database records, schema details, or code — only business-object views (clients, classes, payments).

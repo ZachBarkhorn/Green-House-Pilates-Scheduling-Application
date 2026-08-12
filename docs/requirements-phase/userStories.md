@@ -41,6 +41,28 @@ reservations tab in personal view
 - **US-C13**: As a client, I want to be able to report a bug on the app, so that it can be fixed and work more functionally.
 - **US-C14**: As a client, I want to to view prices of different classes and what's offered, so that I can make decisions about which classes I'd like to go to.
 - **US-C15**: As a client, I want to view different subscription tiers and their value, so that I can decide what is best for me.
+- **US-C16**: As a client, I want to cancel my reservation for a class, so that I can free up my spot if I can no longer attend. **D** - C09
+- **US-C17**: As a client, I want to see my recommended skill level when browsing classes, so that I can identify which classes are appropriate for my experience.
+- **US-C18**: As a client, I want to be restricted from booking classes above my skill level, so that I don't end up in a class I'm not prepared for. **D** - C09, C17
+  - *Note: acceptance criteria will need to define the unlock threshold (e.g. "level 1 unlocks level 2 after X classes completed") — flag ❓ for your girlfriend's input on the exact number.*
+- **US-C19**: As a client, I want to add a note about an injury or physical limitation when booking a class, so that my instructor is aware before class starts. **D** - C09
+  - *🔒 flag: this note likely needs to be visible to Staff (per actors.md) but should not be editable by them — worth a dedicated abuse case later.*
+
+- **US-C20**: As a client, I want to add a payment method to my account, so that I can pay for classes and packages without re-entering my card details each time.
+
+- **US-C21**: As a client, I want to change or remove a saved payment method, so that I can keep my payment information current. **D** - C20
+
+- **US-C22**: As a client, I want to purchase a subscription, bundle, or class pack, so that I can pay for and access the classes I want to attend. **D** - C15, C20
+  - *Note: this is your first "money changes hands" story — will need its own acceptance criteria pass once Stripe integration is designed (Phase 3).*
+
+- **US-C23**: As a client, I want to view my current credit balance, so that I know how many classes or what value I have available to use.
+
+- **US-C24**: As a client, I want to view my transaction history, so that I can review what I've purchased and paid for.
+
+- **US-C25**: As a client, I want to view a history of classes I've attended, so that I can track my own progress and consistency.
+
+- **US-C26**: As a client, I want to change my account details (name, phone, gender, etc.), so that my profile stays accurate and up to date. **D** - C05
+  - *Note: consider whether this should just absorb US-C05 (change email) as one of its fields rather than staying separate — they're both "edit profile field" actions. Your call on whether email deserves its own story since it may need re-verification logic that other fields don't.*
 
 
 

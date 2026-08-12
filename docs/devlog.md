@@ -1,2 +1,5 @@
 ## 8/11/26
 Created repository, setup documentation structure to record architecture decisions and keep a log of progress. Researched how I'll go through the ssdlc phases for practice. Created the requirements phase folder and begun documentation for actors and user stories. Recorded claude output for the build phase into the build-phase file. Got through the first couple user story conversions of the loose requirement ideas I got from the requirements inteview with the client.
+
+## 8/12/26
+Finished up on the user stories document for each actor. Used claude to help with efficiency and making sure that the stories I was writing were correct and that I was getting good practice. Implemented design constraints and some non-functional requirements into the user stories docs too, could separate later. After user story document was completed, I began research on how to write acceptance criteria for each story to have a complete understanding of what it will take to call each story completed. No acceptance criteria were written but I have a basic understanding of what they are now.

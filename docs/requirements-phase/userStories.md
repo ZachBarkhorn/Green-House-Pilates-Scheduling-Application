@@ -84,7 +84,7 @@ reservations tab in personal view
 - **US-C27**: As a client, I want to add a note to my account about an injury or physical limitation when booking a class, so that I do not have to input it each time I sign up for a class. **D** - C09, C19
   - *🔒 flag: this note likely needs to be visible to Staff (per actors.md) but should not be editable by them — worth a dedicated abuse case later.*
  
-- - **EPIC-C-Booking**: As a client, I want a complete, safe booking flow, so that I can reserve, manage, and get the most out of my class attendance. **Dependency** = C09, C10, C16, C17, C18, C19, C27
+- **EPIC-C-Booking**: As a client, I want a complete, safe booking flow, so that I can reserve, manage, and get the most out of my class attendance. **Dependency** = C09, C10, C16, C17, C18, C19, C27
  
 
 

@@ -1,27 +1,5 @@
 IOS/Android client app and part of GHP website. admin page part of GHP website
 
-client--------
-
-
-admin____________
-simple interaction with admin view and seeing each individual enrolled and their age, membership package, total spend all time/periods.
-
-different views of upcoming class... week/month/day
-
-all classes for the day listed, their fullness, the teacher, the time, the kind of class
-
-admin access through the website client access through the app
-
-when you click on class will show people that signed up and the metadata associated with them
-
-also show anyone that signed up and cancelled
-
-individual view for each account on the app showing their upcoming classes, purchases, credit balance, payment methods, their preferences (marketing emails, push notifications, texts, email...), and customer details (age, email, phone, gender, creating date, last visit, total spend, total reservations)
-
-summary tab in personal view detailing immediate easy to find things, upcoming sched, subscriptions,
-
-reservations tab in personal view
-
 # Actors
 ## Client
 - **US-C01**: As a client, I want to view my upcoming reservations, so that I can be reminded of the days I will be traveling to the studio.

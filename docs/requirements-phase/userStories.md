@@ -37,7 +37,7 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
 - **US-C18**: As a client, I want to be restricted from booking classes above my skill level, so that I don't end up in a class I'm not prepared for. **D** - C09, C17
   - *Note: acceptance criteria will need to define the unlock threshold (e.g. "level 1 unlocks level 2 after X classes completed") — flag ❓ for your girlfriend's input on the exact number.*
     
-- **US-C19**: As a client, I want to add a note about an injury or physical limitation when booking a class, so that my instructor is aware before class starts. **D** - C09
+- **US-C19**: As a client, I want to set a persistent injury/limitation note on my profile, so that I don't have to re-enter it every time I book.  **D** - C09
   - *🔒 flag: this note likely needs to be visible to Staff (per actors.md) but should not be editable by them — worth a dedicated abuse case later.*
 
 - **US-C20**: As a client, I want to add a payment method to my account, so that I can pay for classes and packages without re-entering my card details each time.
@@ -53,16 +53,16 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
 
 - **US-C25**: As a client, I want to view a history of classes I've attended, so that I can track my own progress and consistency.
 
-- **US-C26**: As a client, I want to change my account details (name, phone, gender, email, etc.), so that my profile stays accurate and up to date. **D** - C05
+- **US-C26**: As a client, I want to change my account details (name, phone, gender, email, etc.), so that my profile stays accurate and up to date. 
 
-- **US-C27**: As a client, I want to add a note to my account about an injury or physical limitation when booking a class, so that I do not have to input it each time I sign up for a class. **D** - C09, C19
+- **US-C27**: As a client, I want to see and optionally edit my injury note at the moment of booking a specific class, so that I can flag something new or situational without changing my permanent profile note. **D** - C09, C19
   - *🔒 flag: this note likely needs to be visible to Staff (per actors.md) but should not be editable by them — worth a dedicated abuse case later.*
  
 ### Epics
  
 - **EPIC-C-Booking**: As a client, I want a complete, safe booking flow, so that I can reserve, manage, and get the most out of my class attendance. **Dependency** = C09, C10, C16, C17, C18, C19, C27
 
-- **EPIC-C-AccountPage**: As a client, I want an account page with all my data and information, so that I can edit my preferences and change data in one place. **Dependency** = C04, C20, C21, C23, C24, C26
+- **EPIC-C-AccountPage**: As a client, I want an account page with all my data and information, so that I can edit my preferences and change data in one place. **Dependency** = C04, C19, C20, C21, C23, C24, C25, C26
 
 - **EPIC-C-Dashboard**: As a client, I want a dashboard that shows the most important information I need a glance, so that I don't have to spend time navigating different menus to find what I need. **Dependency** = C01,C02, (more if I decide on another dashboard display).
 

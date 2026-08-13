@@ -121,7 +121,8 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
 - **US-A13**: As an admin, I want a reservations tab within a client's profile showing their booking history, so that I can review their attendance pattern.
 - **US-A14**: As an admin, I want to remove a client from a class, so that I can manage a roster manually if needed (e.g. resolving a conflict or error).
 - **US-A15**: As an admin, I want to ban a client from the studio, so that I can enforce studio policy in serious cases.
-  - *🔒 flag: high-impact action — will need strong acceptance criteria (confirmation step, audit trail of who banned whom and why) and its own abuse case (e.g. can a compromised admin session ban clients en masse without detection).*
+  - *🔒 flag: high-impact action — will need strong acceptance criteria (confirmation step, audit trail of who banned whom and why) and its own abuse case (e.g. can a compromised admin session ban clients en masse without detection).* 
+- **US-A20**: As an admin, I want to be able to unban a client from the studio, so that if I made a mistake or change my mind I can allow the account to be used again.
 
 ### Staff management
 - **US-A16**: As an admin, I want to view all staff members, so that I have visibility into who's on the team.

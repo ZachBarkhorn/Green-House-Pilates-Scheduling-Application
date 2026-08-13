@@ -143,6 +143,71 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
 
 - **EPIC-A-Notifications**: As an admin, I want to communicate with clients at both the class and studio-wide level, so that I can keep clients informed. **Dependency** = A18, A19
 
+## Anonymous Visitor
+
+- **US-V01**: As an anonymous visitor, I want to view the studio's home page 
+  (mission statement, teaching methodology, who they cater to), so that I can 
+  understand what the studio offers before signing up.
+
+- **US-V02**: As an anonymous visitor, I want to view client testimonials, 
+  so that I can gauge whether the studio is a good fit for me.
+
+- **US-V03**: As an anonymous visitor, I want to view photos of the studio 
+  and clients taking classes, so that I can get a feel for the space and 
+  community before committing.
+
+- **US-V04**: As an anonymous visitor, I want to create an account and 
+  verify my email, so that I can be upgraded to full Client access.
+  - *Decision: account creation does not immediately grant Client status. 
+    The user remains at Anonymous Visitor permission level — can browse, 
+    but cannot book/access client-only features — until email is verified.*
+
+- **US-V05**: As an anonymous visitor who has just signed up, I want to 
+  receive a verification email with a confirmation link, so that I can 
+  prove ownership of my email and unlock full Client access. **D** - V04
+
+- **US-V06**: As an anonymous visitor with an unverified account, I want 
+  to be blocked from booking classes or accessing client-only features, 
+  so that only verified accounts can transact. **D** - V04
+  - *🔒 flag: this is an authz boundary just like Staff roster scoping — 
+    worth an explicit abuse case later (e.g. "unverified account attempts 
+    to hit a client-only booking endpoint directly").*
+    
+### Epics
+- **EPIC-V-Landing**: As an anonymous visitor, I want a landing experience 
+  that helps me evaluate the studio before signing up, so that I feel 
+  confident creating an account. **Dependency** = V01, V02, V03
+
+## System (Stripe)
+
+- **US-SYS01**: As the system, I want to receive and verify Stripe webhook 
+  events via signature verification, so that only authentic events from 
+  Stripe are trusted and acted upon.
+  - *🔒 flag: this is your primary trust boundary for payments — an unverified 
+    or spoofed webhook could fraudulently mark a purchase as paid. This needs 
+    a hard AC later: "Given a webhook payload with an invalid or missing 
+    signature, when it's received, then it is rejected and not processed, 
+    and the event is logged."*
+
+- **US-SYS02**: As the system, I want to update a client's payment status 
+  and credit balance when a verified webhook confirms a successful payment, 
+  so that the client's account accurately reflects what they've paid for. 
+  **D** - SYS01, C22
+
+- **US-SYS03**: As the system, I want to update a client's payment status 
+  when a verified webhook reports a failed or disputed payment, so that 
+  access to paid features can be revoked or flagged appropriately. 
+  **D** - SYS01
+
+- **US-SYS04**: As the system, I want to log all received webhook events 
+  (verified and rejected), so that payment activity is auditable if a 
+  dispute or investigation arises. **D** - SYS01
+
+### Epics
+- **EPIC-SYS-Payments**: As the system, I want to reliably and securely 
+  process payment events from Stripe, so that client accounts stay 
+  accurate and the payment trust boundary is enforced. 
+  **Dependency** = SYS01, SYS02, SYS03, SYS04
 
 # Non-Functional Reqs
 - **NFR-01**: Client must be able to complete a class booking in 3 taps or fewer 

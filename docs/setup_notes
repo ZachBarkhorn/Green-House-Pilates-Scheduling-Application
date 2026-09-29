@@ -1,0 +1,40 @@
+You can skip the VM. Container Apps can host the app without one. You'd just lose the "hardened a Linux server with Ansible to a CIS/STIG baseline" part of your story. A free middle ground is a local VM on your PC through Hyper-V or Multipass, which gives you a practice target for Ansible and hardening without any cloud cost. I'd leave this decision for later. It isn't needed until well after the app works.
+
+Plan for your next sessions
+
+Stay in order, because each step produces the next step's inputs. And design comes before code; that's the SSDLC point you're making.
+
+Finish acceptance criteria and add security criteria.
+Write each criterion in Given/When/Then format so it can later become a test.
+For each story, add at least one security criterion. For example: "Given a client, when they call the ban endpoint, then the server returns 403." Also cover input validation and rate limits.
+Write a few misuse cases, like "a client books a class for someone else" or "a user replays a Stripe webhook."
+Deliverable: a complete set of stories with functional and security acceptance criteria.
+Scope the MVP and set up the backlog.
+Sort the stories into must, should, could and won't (the MoSCoW method), and choose the smallest version Emma could actually use.
+Classify your data: what's personal information, and what payment data Stripe handles so you never touch card numbers.
+Load the must-have stories into GitHub Issues with a GitHub Projects board. That's your Agile/Jira experience.
+Deliverable: the MVP backlog and a data classification table.
+Design.
+Draw an architecture diagram of the Azure layout we discussed.
+Design the Postgres schema as an ERD: users, roles, classes, sessions, bookings, payments.
+Sketch the API endpoints.
+Write short decision records (ADRs) for the big choices, like Postgres over MongoDB and Container Apps over a full Kubernetes cluster. These records are great interview material.
+Deliverable: the diagram, ERD, API outline and ADRs.
+Threat model.
+Draw a data flow diagram and walk through it with STRIDE.
+Each threat you find becomes a new acceptance criterion or a test, which ties back to step 1.
+Update your traceability matrix, which links each requirement to its design, test and mitigation. This lines up directly with your CSSLP.
+Deliverable: the threat model and updated requirements.
+Dev environment.
+Set up WSL2, the GitHub repo, branch protection, and a pre-commit hook that runs Gitleaks to catch secrets.
+Get a basic "hello world" API talking to Postgres in Docker Compose.
+Deliverable: docker compose up runs the skeleton app.
+CI pipeline and first feature.
+Set up GitHub Actions to run lint, tests, Semgrep and Trivy on every pull request.
+Build the admin ban/unban flow with server-side authorization. Its acceptance criteria from step 1 become the tests.
+Deliverable: the first feature merged through a pipeline that enforces security checks.
+
+After step 6, the app is real enough to add to your resume. Terraform, Azure deployment and Kubernetes come after that.
+
+
+Full production and plan in claude chat - "Pilates scheduling capstone project"

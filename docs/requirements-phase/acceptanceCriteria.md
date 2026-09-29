@@ -41,7 +41,7 @@ For each story going forward, work through in this order:
   - AC10: Given an admin session token, when it is used to submit an unban request, then the server independently re-verifies the caller's admin role - it does not trust a client-side "isAdmin" flag alone.
 
 
-## Admin
+## Staff
 
 - **US-S02**:
   - AC1: Given a staff member is teaching a future/present class, when they click on the class, then they are able to view the enrolled participants coming

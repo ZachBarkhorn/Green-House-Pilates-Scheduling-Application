@@ -40,3 +40,18 @@ For each story going forward, work through in this order:
   - AC9: Given a non-admin user, when they attempt to call the unban endpoint directly, then the request is rejected with an authorization error.
   - AC10: Given an admin session token, when it is used to submit an unban request, then the server independently re-verifies the caller's admin role - it does not trust a client-side "isAdmin" flag alone.
 
+
+## Admin
+
+- **US-S02**:
+  - AC1: Given a staff member is teaching a future/present class, when they click on the class, then they are able to view the enrolled participants coming
+  - AC2: Given a staff member has 0 members in their class, when they click on it, they are shown a message saying "no enrollment just yet"
+  - AC3: Given a client cancels their reservation for a class, when staff view the roster afterward, then the cancelled client no longer appears in the active list — staff do not see cancellation history (unlike Admin, per US-A09, which does).
+  - AC4: Abuse Case: Given a staff member tries to view the roster for a class they aren't assigned to, when they attempt to view it (via api call or UI), then the request is denied - no information on if it exists or not is given for security reasons.
+  - AC5: Given a staff member's session, when they request a class roster, then the server verifies server-side that this staff member is assigned to that specific class — not just that they are logged in as "staff" generally.
+  - AC6: If a staff member picks up a class after its created, when they view the roster, then they are allowed through to see the participants.
+ 
+
+
+
+

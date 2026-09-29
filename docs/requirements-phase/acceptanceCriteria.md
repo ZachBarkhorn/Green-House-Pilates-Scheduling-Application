@@ -3,7 +3,7 @@ each independently testable, describes behavior not implementation
 
 For each story going forward, work through in this order:
 
-Happy path (1-2 ACs)
+Happy path (1-2 ACs) 
 Edge cases / preconditions not met (ask "what if the normal state isn't true?")
 Side effects on related data (what else does this touch that could end up inconsistent?)
 Audit/logging — only if the action is high-impact or disputable

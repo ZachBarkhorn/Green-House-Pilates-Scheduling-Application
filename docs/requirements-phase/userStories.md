@@ -1,6 +1,6 @@
 IOS/Android client app and part of GHP website. admin page part of GHP website
 
-#MVP Scope Stories
+# MVP Scope Stories
 - Client: 06, 09, 16, 03
 - Admin: 01, 02, 03, 06, 07, 08
 - Visitor: 04 (skip email verification right now), 07

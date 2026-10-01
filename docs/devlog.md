@@ -10,3 +10,6 @@ Added user stories for the anonymous user, and the system actors that I have fle
 ## 9/29/26
 Planned the tools that I would be using to complete this project. Tools that would give me the necessary experience that I need to land a role somewhere such as Azure, Docker, DevOps practices (CI/CD), etc... 
 Following that I continued to labor on the acceptance criteria section added criteria for US-S02 with the time that I had left to work today.
+
+## 10/1/26
+I simplified the scope of the project to decrease time before a workable product was available. I decided that it would be better to add the quality of life things at a later point and get a minimum viable product up and running so that I can get practice actually using the dev tools and CI/CD things that will increase my value. Small work day but got a few ACs completed and moved the needle forward.

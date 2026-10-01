@@ -10,6 +10,27 @@ For each story going forward, work through in this order:
 - Abuse case as a hard AC — only for 🔒-flagged stories
 - Note any new questions or child stories that surfaced — don't force an answer, just flag it
 
+## Client
+
+- **US-C06**
+  - AC1: Given a client is on the website, when they click the 'classes' tab, then they are shown a list of all the listed classes currently available to be signed up for and who is teaching them.
+  - AC2: Given no classes have been created yet, when a client clicks 'classes', then they are shown a message indicating there are currently no classes available, rather than a blank or broken page.
+  - AC3: Given a class is full, when a client views the class list, then it's shown in a different color and says 'full' (waitlist added later)
+
+- **US-C09**
+  - AC1: Given a client is on 'classes' tab, when they click 'sign up', then a spot in the class is reduced by 1 and the client's spot is reserved in said class and a reservation record is created linking the client, the class, and the signup timestamp.
+  - AC2: Given a class is full, when they try to sign up, then they will not be able to because there is no spot and the words on the button will change to "full"
+  - AC3: Given a class has exactly 1 spot remaining, when two clients attempt to sign up simultaneously, then only one booking succeeds and the second request is rejected with a "class is now full" message, not a duplicate confirmation.
+  - AC4: Given a client is already signed up for a class, when they view that class again, then they see a "cancel" option instead of "sign up" — they cannot book the same class twice.
+ 
+- **US-C16**
+  - AC1: Given a client is signed up for a class, when they click 'cancel reservation', then the 'available spots' in the class increases by 1 and the client is no longer listed as a participant, and the reservation record is marked as cancelled (not deleted) so the cancellation is preserved.
+  - AC2: Given a client cancels, when they do so, then a log is created for who did and when
+  - AC3: Given a class's scheduled time has already passed, when a client views it, then no "cancel reservation" option is available — past classes cannot be cancelled.
+  - AC4: Given a client attempts to cancel a reservation that belongs to a different client (e.g. by manipulating a reservation ID), then the request is rejected — a client can only cancel their own reservations.
+
+
+    
 ## Admin
 
 - **US-A15**
@@ -51,8 +72,7 @@ For each story going forward, work through in this order:
   - AC5: Given a staff member's session, when they request a class roster, then the server verifies server-side that this staff member is assigned to that specific class — not just that they are logged in as "staff" generally.
   - AC6: If a staff member picks up a class after its created, when they view the roster, then they are allowed through to see the participants.
 
-- **US-S08**:
-  - AC1: 
+
 
 
 

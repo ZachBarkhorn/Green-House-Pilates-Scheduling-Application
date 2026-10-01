@@ -50,8 +50,9 @@ For each story going forward, work through in this order:
   - AC4: Abuse Case: Given a staff member tries to view the roster for a class they aren't assigned to, when they attempt to view it (via api call or UI), then the request is denied - no information on if it exists or not is given for security reasons.
   - AC5: Given a staff member's session, when they request a class roster, then the server verifies server-side that this staff member is assigned to that specific class — not just that they are logged in as "staff" generally.
   - AC6: If a staff member picks up a class after its created, when they view the roster, then they are allowed through to see the participants.
- 
 
+- **US-S08**:
+  - AC1: 
 
 
 

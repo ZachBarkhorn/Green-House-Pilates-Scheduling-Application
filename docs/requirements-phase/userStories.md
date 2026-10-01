@@ -1,5 +1,10 @@
 IOS/Android client app and part of GHP website. admin page part of GHP website
 
+#MVP Scope Stories
+- Client: 06, 09, 16, 03
+- Admin: 01, 02, 03, 06, 07, 08
+- Visitor: 04 (skip email verification right now), 07
+
 # Actors
 ## Client
 - **US-C01**: As a client, I want to view my upcoming reservations, so that I can be reminded of the days I will be traveling to the studio.
@@ -157,8 +162,8 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
   and clients taking classes, so that I can get a feel for the space and 
   community before committing.
 
-- **US-V04**: As an anonymous visitor, I want to create an account and 
-  verify my email, so that I can be upgraded to full Client access.
+- **US-V04**: As an anonymous visitor, I want to create an account (deferred: and 
+  verify my email), so that I can be upgraded to full Client access.
   - *Decision: account creation does not immediately grant Client status. 
     The user remains at Anonymous Visitor permission level — can browse, 
     but cannot book/access client-only features — until email is verified.*
@@ -173,6 +178,10 @@ IOS/Android client app and part of GHP website. admin page part of GHP website
   - *🔒 flag: this is an authz boundary just like Staff roster scoping — 
     worth an explicit abuse case later (e.g. "unverified account attempts 
     to hit a client-only booking endpoint directly").*
+    
+- **US-VO7**: As an anonymous visitor with an existing account, I want to 
+  log in with my email and password, so that I can access my client-level 
+  features.
     
 ### Epics
 - **EPIC-V-Landing**: As an anonymous visitor, I want a landing experience 
